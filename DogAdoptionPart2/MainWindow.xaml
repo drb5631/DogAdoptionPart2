@@ -14,9 +14,9 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="61" Margin="131,19,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="532" FontSize="36" BorderBrush="{x:Null}" FontWeight="Bold"/>
-        <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="28,85,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
-        <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="69,132,0,0" VerticalAlignment="Top" Width="82" FontSize="16" FontWeight="Bold">
+        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="50" Margin="190,10,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="421" FontSize="24" BorderBrush="{x:Null}" FontWeight="Bold" IsReadOnly="True"/>
+        <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="34,127,0,0" VerticalAlignment="Top" Width="82" FontSize="16" FontWeight="Bold">
             <ListBoxItem x:Name="dogBella" Content="Bella"/>
             <ListBoxItem x:Name="dogCharlie" Content="Charlie"/>
             <ListBoxItem x:Name="dogLuna" Content="Luna"/>
@@ -28,6 +28,13 @@
             <ListBoxItem x:Name="dogHexi" Content="Hexi"/>
             <ListBoxItem x:Name="dogRex" Content="Rex"/>
         </ListBox>
+        <Label x:Name="dogNameLabel" Content="Name:" HorizontalAlignment="Left" Margin="168,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="godBreedLabel" Content="Breed:" HorizontalAlignment="Left" Margin="168,189,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogAvailableLabel" Content="Months Available:" HorizontalAlignment="Left" Margin="168,363,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogShotsLabel" Content="Shots?:" HorizontalAlignment="Left" Margin="168,306,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogWeightLabel" Content="Weight:" HorizontalAlignment="Left" Margin="168,249,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogBDayLabel" Content="Birthday:" HorizontalAlignment="Left" Margin="168,137,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="317,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
