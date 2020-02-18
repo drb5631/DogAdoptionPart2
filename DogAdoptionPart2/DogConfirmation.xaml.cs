@@ -45,5 +45,11 @@ namespace DogAdoptionPart2
             twentyDonate.IsChecked = false;
             fiftyDonate.IsChecked = false;
         }
+
+        private void ConfirmDogButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("THANK YOU FOR YOUR CONFIRMATION! YOUR NEW FRIEND IS READY TO BE PICKED UP!");
+            Application.Current.Shutdown();
+        }
     }
 }

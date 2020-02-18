@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="images/dogs.jpg" Opacity="0.3"/>
         </Grid.Background>
         <Button x:Name="cancelDogButton" Content="Cancel" HorizontalAlignment="Left" Margin="362,370,0,0" VerticalAlignment="Top" Width="123" Height="38" FontSize="20" FontWeight="Bold" Click="CancelDogButton_Click"/>
-        <Button x:Name="confirmDogButton" Content="Confirm Dog" HorizontalAlignment="Left" Margin="123,371,0,0" VerticalAlignment="Top" Width="161" Height="38" FontSize="20" FontWeight="Bold" IsCancel="True"/>
+        <Button x:Name="confirmDogButton" Content="Confirm Dog" HorizontalAlignment="Left" Margin="123,371,0,0" VerticalAlignment="Top" Width="161" Height="38" FontSize="20" FontWeight="Bold" IsCancel="True" Click="ConfirmDogButton_Click"/>
         <Label x:Name="confirmDogLabel" Content="Confirm Your Dog" HorizontalAlignment="Left" Margin="233,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
         <TextBox x:Name="donateMessageTextBox" HorizontalAlignment="Left" Height="167" Margin="504,87,0,0" TextWrapping="Wrap" Text="Please consider making a donation so that we can continue to give our furry friends the best possible care! Your contribution is most greatly appreciated!" VerticalAlignment="Top" Width="280" FontSize="20" IsReadOnly="True" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="#FF0F00FF">
             <TextBox.Background>
