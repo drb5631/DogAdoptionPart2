@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:DogAdoptionPart2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid x:Name="mainGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="images/dogs.jpg" Opacity="0.3"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="61" Margin="131,19,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="532" FontSize="36" BorderBrush="{x:Null}" FontWeight="Bold"/>
+        <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="28,85,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="69,132,0,0" VerticalAlignment="Top" Width="82" FontSize="16" FontWeight="Bold">
+            <ListBoxItem x:Name="dogBella" Content="Bella"/>
+            <ListBoxItem x:Name="dogCharlie" Content="Charlie"/>
+            <ListBoxItem x:Name="dogLuna" Content="Luna"/>
+            <ListBoxItem x:Name="dogLucy" Content="Lucy"/>
+            <ListBoxItem x:Name="dogMax" Content="Max"/>
+            <ListBoxItem x:Name="dogBailey" Content="Bailey"/>
+            <ListBoxItem x:Name="dogCooper" Content="Cooper"/>
+            <ListBoxItem x:Name="dogDaisy" Content="Daisy"/>
+            <ListBoxItem x:Name="dogHexi" Content="Hexi"/>
+            <ListBoxItem x:Name="dogRex" Content="Rex"/>
+        </ListBox>
+
     </Grid>
 </Window>

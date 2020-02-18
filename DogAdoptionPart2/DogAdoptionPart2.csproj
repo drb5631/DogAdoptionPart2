@@ -94,5 +94,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\dogs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\hexi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bailey.jpg" />
+    <Resource Include="images\bella.jpg" />
+    <Resource Include="images\bernadette.jpg" />
+    <Resource Include="images\charlie.jpg" />
+    <Resource Include="images\cooper.jpg" />
+    <Resource Include="images\daisy.jpg" />
+    <Resource Include="images\lucy.jpg" />
+    <Resource Include="images\luna.jpg" />
+    <Resource Include="images\max.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
