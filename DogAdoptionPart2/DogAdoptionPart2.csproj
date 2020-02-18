@@ -111,5 +111,8 @@
     <Resource Include="images\luna.jpg" />
     <Resource Include="images\max.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DogInformation.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

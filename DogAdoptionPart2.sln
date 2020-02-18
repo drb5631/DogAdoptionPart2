@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogAdoptionPart2", "DogAdoptionPart2\DogAdoptionPart2.csproj", "{0C61E113-5889-46F6-AD01-5EE4F3878B88}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CEAB439-DCDC-423B-A530-3FAC9513C21E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DogInformationTxt", "DogInformationTxt", "{0CEAB439-DCDC-423B-A530-3FAC9513C21E}"
 	ProjectSection(SolutionItems) = preProject
 		DogInformation.txt = DogInformation.txt
 	EndProjectSection
