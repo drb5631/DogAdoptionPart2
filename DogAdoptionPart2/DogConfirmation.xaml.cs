@@ -30,5 +30,15 @@ namespace DogAdoptionPart2
             this.Close();
             mainWindow.Show();
         }
+
+        private void DonateButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("THANK YOU FOR YOUR CONTRIBUTION!");
+            oneDonate.IsChecked = false;
+            fiveDonate.IsChecked = false;
+            tenDonate.IsChecked = false;
+            twentyDonate.IsChecked = false;
+            fiftyDonate.IsChecked = false;
+        }
     }
 }

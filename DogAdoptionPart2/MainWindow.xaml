@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DogAdoptionPart2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid x:Name="mainGrid">
         <Grid.Background>
             <ImageBrush ImageSource="images/dogs.jpg" Opacity="0.3"/>
@@ -16,7 +16,6 @@
             <ColumnDefinition Width="781*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="50" Margin="177.2,10,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="421" FontSize="24" BorderBrush="{x:Null}" FontWeight="Bold" IsReadOnly="True" Grid.Column="2"/>
         <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.ColumnSpan="3"/>
         <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="21.2,127,0,0" VerticalAlignment="Top" Width="115" FontSize="16" FontWeight="Bold" Grid.Column="2">
             <ListBoxItem x:Name="dogBella" Content="Bella" Selected="DogBella_Selected"/>
@@ -45,6 +44,7 @@
         <Button x:Name="chooseDogButton" Content="Choose Dog" HorizontalAlignment="Left" Margin="527.2,366,0,0" VerticalAlignment="Top" Width="121" Height="30" Grid.Column="2" Click="ChooseDogButton_Click" FontSize="20" FontWeight="Bold"/>
         <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="664.2,366,0,0" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="2" Click="ExitButton_Click" FontSize="20" FontWeight="Bold"/>
         <Image x:Name="dogImageDisplay" HorizontalAlignment="Left" Height="192" Margin="506.2,106,0,0" VerticalAlignment="Top" Width="201" Stretch="Fill" Grid.Column="2"/>
+        <Label Content="Welcome to the Dog Adoption App!" Grid.Column="2" HorizontalAlignment="Left" Margin="96,6,0,0" VerticalAlignment="Top" Width="641" FontWeight="Bold" FontSize="36"/>
 
     </Grid>
 </Window>

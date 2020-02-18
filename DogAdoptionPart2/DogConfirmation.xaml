@@ -5,15 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DogAdoptionPart2"
         mc:Ignorable="d"
-        Title="DogConfirmation" Height="450" Width="800">
+        Title="DogConfirmation" Height="450" Width="800" ResizeMode="NoResize">
     <Grid x:Name="confirmDogGrid">
-        <Button x:Name="cancelDogButton" Content="Cancel" HorizontalAlignment="Left" Margin="146,357,0,0" VerticalAlignment="Top" Width="123" Height="38" FontSize="20" FontWeight="Bold" Click="CancelDogButton_Click"/>
-        <Button x:Name="confirmDogButton" Content="Confirm Order" HorizontalAlignment="Left" Margin="309,357,0,0" VerticalAlignment="Top" Width="161" Height="38" FontSize="20" FontWeight="Bold"/>
-        <Label x:Name="confirmDogLabel" Content="Confirm Your Dog" HorizontalAlignment="Left" Margin="234,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
-        <TextBox HorizontalAlignment="Left" Height="167" Margin="504,87,0,0" TextWrapping="Wrap" Text="Please consider making a donation so that we can continue to give our furry friends the best possible care! Your contribution is greatly appreciated!" VerticalAlignment="Top" Width="280" FontWeight="Bold" FontSize="20" IsReadOnly="True" BorderBrush="{x:Null}"/>
-        <Label Content="Amount: $" HorizontalAlignment="Left" Margin="504,270,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <Button x:Name="donateButton" Content="Donate" HorizontalAlignment="Left" Margin="625,320,0,0" VerticalAlignment="Top" Width="97" Height="38" FontSize="20" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="37" Margin="613,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionOpacity="-1" Cursor="Cross"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/dogs.jpg" Opacity="0.3"/>
+        </Grid.Background>
+        <Button x:Name="cancelDogButton" Content="Cancel" HorizontalAlignment="Left" Margin="362,370,0,0" VerticalAlignment="Top" Width="123" Height="38" FontSize="20" FontWeight="Bold" Click="CancelDogButton_Click"/>
+        <Button x:Name="confirmDogButton" Content="Confirm Dog" HorizontalAlignment="Left" Margin="123,371,0,0" VerticalAlignment="Top" Width="161" Height="38" FontSize="20" FontWeight="Bold" IsCancel="True"/>
+        <Label x:Name="confirmDogLabel" Content="Confirm Your Dog" HorizontalAlignment="Left" Margin="233,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
+        <TextBox x:Name="donateMessageTextBox" HorizontalAlignment="Left" Height="167" Margin="504,87,0,0" TextWrapping="Wrap" Text="Please consider making a donation so that we can continue to give our furry friends the best possible care! Your contribution is most greatly appreciated!" VerticalAlignment="Top" Width="280" FontSize="20" IsReadOnly="True" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="#FF0F00FF">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFFF00E5" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="donateAmountLabel" Content="Amount:" HorizontalAlignment="Left" Margin="504,270,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <ListBox x:Name="donationSelectionBox" HorizontalAlignment="Left" Height="140" Margin="597,270,0,0" VerticalAlignment="Top" Width="174" BorderBrush="{x:Null}">
+            <ListBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </ListBox.Background>
+            <RadioButton x:Name="oneDonate" Content="$1" FontSize="18"/>
+            <RadioButton x:Name="fiveDonate" Content="$5" FontSize="18"/>
+            <RadioButton x:Name="tenDonate" Content="$10" FontSize="18"/>
+            <RadioButton x:Name="twentyDonate" Content="$20" FontSize="18"/>
+            <RadioButton x:Name="fiftyDonate" Content="$50" FontSize="18"/>
+        </ListBox>
+        <Button x:Name="donateButton" Content="Donate" HorizontalAlignment="Left" Margin="672,372,0,0" VerticalAlignment="Top" Width="99" Height="38" FontSize="20" FontWeight="Bold" Click="DonateButton_Click"/>
+        <Label x:Name="dogNameLabel" Content="Name:" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="godBreedLabel" Content="Breed:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogAvailableLabel" Content="Months Available:" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" RenderTransformOrigin="0.738,-1.348"/>
+        <Label x:Name="dogShotsLabel" Content="Shots?:" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" RenderTransformOrigin="-0.664,0.178"/>
+        <Label x:Name="dogWeightLabel" Content="Weight:" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <Label x:Name="dogBDayLabel" Content="Birthday:" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="37" Margin="123,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.7"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="availableTextBox" HorizontalAlignment="Left" Height="37" Margin="204,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="shotsTextBox" HorizontalAlignment="Left" Height="37" Margin="123,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.3"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="weightTextBox" HorizontalAlignment="Left" Height="37" Margin="123,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.4"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="breedTextBox" HorizontalAlignment="Left" Height="55" Margin="123,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="bdayTextBox" HorizontalAlignment="Left" Height="37" Margin="123,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.6"/>
+            </TextBox.Background>
+        </TextBox>
+        <Image x:Name="confirmDogImage" HorizontalAlignment="Left" Height="231" Margin="290,76,0,0" VerticalAlignment="Top" Width="195" Stretch="Fill"/>
 
     </Grid>
 </Window>
