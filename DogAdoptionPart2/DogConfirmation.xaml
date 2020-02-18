@@ -66,7 +66,7 @@
                 <SolidColorBrush Color="White" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Image x:Name="confirmDogImage" HorizontalAlignment="Left" Height="231" Margin="290,76,0,0" VerticalAlignment="Top" Width="195" Stretch="Fill"/>
+        <Image x:Name="confirmDogImageDisplay" HorizontalAlignment="Left" Height="231" Margin="290,76,0,0" VerticalAlignment="Top" Width="195" Stretch="Fill"/>
 
     </Grid>
 </Window>

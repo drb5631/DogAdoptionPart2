@@ -21,6 +21,8 @@ namespace DogAdoptionPart2
     /// </summary>
     public partial class MainWindow : Window
     {
+        DogConfirmation dogConfirmation = new DogConfirmation();
+
 
         //IEnumerable<string> lines = File.ReadLines("C:/Users/dblon/source/repos/DogAdoptionPart2/DogInformation.txt").ToArray();
         string[] dogInfo = File.ReadLines("C:/Users/dblon/source/repos/DogAdoptionPart2/DogInformation.txt").ToArray();
@@ -36,6 +38,12 @@ namespace DogAdoptionPart2
 
         }
 
+        private void ChooseDogButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            dogConfirmation.Show();
+        }
+
         private void DogBella_Selected(object sender, RoutedEventArgs e)
         {
             dogImageDisplay.Source = new BitmapImage(new Uri("images/bella.jpg", UriKind.Relative));
@@ -45,6 +53,16 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(30);
             shotsTextBox.Text = (string)dogInfo.GetValue(40);
             availableTextBox.Text = (string)dogInfo.GetValue(50);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/bella.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(0);
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(0);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(10);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(20);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(30);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(40);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(50);
+
         }
 
         private void DogCharlie_Selected(object sender, RoutedEventArgs e)
@@ -56,6 +74,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(31);
             shotsTextBox.Text = (string)dogInfo.GetValue(41);
             availableTextBox.Text = (string)dogInfo.GetValue(51);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/charlie.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(1);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(11);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(21);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(31);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(41);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(51);
         }
 
         private void DogLuna_Selected(object sender, RoutedEventArgs e)
@@ -67,6 +93,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(32);
             shotsTextBox.Text = (string)dogInfo.GetValue(42);
             availableTextBox.Text = (string)dogInfo.GetValue(52);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/luna.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(2);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(12);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(22);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(32);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(42);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(52);
         }
 
         private void DogLucy_Selected(object sender, RoutedEventArgs e)
@@ -78,6 +112,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(33);
             shotsTextBox.Text = (string)dogInfo.GetValue(43);
             availableTextBox.Text = (string)dogInfo.GetValue(53);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/lucy.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(3);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(13);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(23);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(33);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(43);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(53);
         }
 
         private void DogMax_Selected(object sender, RoutedEventArgs e)
@@ -89,6 +131,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(34);
             shotsTextBox.Text = (string)dogInfo.GetValue(44);
             availableTextBox.Text = (string)dogInfo.GetValue(54);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/max.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(4);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(14);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(24);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(34);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(44);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(54);
         }
 
         private void DogBailey_Selected(object sender, RoutedEventArgs e)
@@ -100,6 +150,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(35);
             shotsTextBox.Text = (string)dogInfo.GetValue(45);
             availableTextBox.Text = (string)dogInfo.GetValue(55);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/bailey.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(5);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(15);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(25);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(35);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(45);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(55);
         }
 
         private void DogCooper_Selected(object sender, RoutedEventArgs e)
@@ -111,6 +169,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(36);
             shotsTextBox.Text = (string)dogInfo.GetValue(46);
             availableTextBox.Text = (string)dogInfo.GetValue(56);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/cooper.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(6);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(16);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(26);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(36);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(46);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(56);
         }
 
         private void DogDaisy_Selected(object sender, RoutedEventArgs e)
@@ -122,6 +188,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(37);
             shotsTextBox.Text = (string)dogInfo.GetValue(47);
             availableTextBox.Text = (string)dogInfo.GetValue(57);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/daisy.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(7);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(17);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(27);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(37);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(47);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(57);
         }
 
         private void DogHexi_Selected(object sender, RoutedEventArgs e)
@@ -133,6 +207,14 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(38);
             shotsTextBox.Text = (string)dogInfo.GetValue(48);
             availableTextBox.Text = (string)dogInfo.GetValue(58);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/hexi.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(8);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(18);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(28);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(38);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(48);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(58);
         }
 
         private void DogBernadette_Selected(object sender, RoutedEventArgs e)
@@ -144,18 +226,19 @@ namespace DogAdoptionPart2
             weightTextBox.Text = (string)dogInfo.GetValue(39);
             shotsTextBox.Text = (string)dogInfo.GetValue(49);
             availableTextBox.Text = (string)dogInfo.GetValue(59);
+
+            dogConfirmation.confirmDogImageDisplay.Source = new BitmapImage(new Uri("images/bernadette.jpg", UriKind.Relative));
+            dogConfirmation.nameTextBox.Text = (string)dogInfo.GetValue(9);
+            dogConfirmation.bdayTextBox.Text = (string)dogInfo.GetValue(19);
+            dogConfirmation.breedTextBox.Text = (string)dogInfo.GetValue(29);
+            dogConfirmation.weightTextBox.Text = (string)dogInfo.GetValue(39);
+            dogConfirmation.shotsTextBox.Text = (string)dogInfo.GetValue(49);
+            dogConfirmation.availableTextBox.Text = (string)dogInfo.GetValue(59);
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-        }
-
-        private void ChooseDogButton_Click(object sender, RoutedEventArgs e)
-        {
-            DogConfirmation dogConfirmation = new DogConfirmation();
-            this.Close();
-            dogConfirmation.Show();
         }
     }
 }
