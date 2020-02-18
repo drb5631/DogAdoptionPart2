@@ -24,5 +24,15 @@ namespace DogAdoptionPart2
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void DogBella_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
