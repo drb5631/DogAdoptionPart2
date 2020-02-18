@@ -11,13 +11,14 @@
             <ImageBrush ImageSource="images/dogs.jpg" Opacity="0.3"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="9*"/>
             <ColumnDefinition Width="781*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="50" Margin="177.2,10,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="421" FontSize="24" BorderBrush="{x:Null}" FontWeight="Bold" IsReadOnly="True" Grid.Column="1"/>
-        <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="21.2,127,0,0" VerticalAlignment="Top" Width="115" FontSize="16" FontWeight="Bold" Grid.Column="1">
+        <TextBox x:Name="headerText" HorizontalAlignment="Left" Height="50" Margin="177.2,10,0,0" TextWrapping="Wrap" Text="Welcome to the Dog Adoption App!" VerticalAlignment="Top" Width="421" FontSize="24" BorderBrush="{x:Null}" FontWeight="Bold" IsReadOnly="True" Grid.Column="2"/>
+        <Label x:Name="dogNamesLabel" Content="Choose A Dog!" HorizontalAlignment="Left" Margin="0,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.ColumnSpan="3"/>
+        <ListBox x:Name="dogNamesList" HorizontalAlignment="Left" Height="262" Margin="21.2,127,0,0" VerticalAlignment="Top" Width="115" FontSize="16" FontWeight="Bold" Grid.Column="2">
             <ListBoxItem x:Name="dogBella" Content="Bella" Selected="DogBella_Selected"/>
             <ListBoxItem x:Name="dogCharlie" Content="Charlie" Selected="DogCharlie_Selected"/>
             <ListBoxItem x:Name="dogLuna" Content="Luna" Selected="DogLuna_Selected"/>
@@ -29,21 +30,21 @@
             <ListBoxItem x:Name="dogHexi" Content="Hexi" Selected="DogHexi_Selected"/>
             <ListBoxItem x:Name="dogBernadette" Content="Bernadette" Selected="DogBernadette_Selected"/>
         </ListBox>
-        <Label x:Name="dogNameLabel" Content="Name:" HorizontalAlignment="Left" Margin="155.2,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <Label x:Name="godBreedLabel" Content="Breed:" HorizontalAlignment="Left" Margin="155.2,189,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <Label x:Name="dogAvailableLabel" Content="Months Available:" HorizontalAlignment="Left" Margin="155.2,363,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <Label x:Name="dogShotsLabel" Content="Shots?:" HorizontalAlignment="Left" Margin="155.2,306,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <Label x:Name="dogWeightLabel" Content="Weight:" HorizontalAlignment="Left" Margin="155.2,249,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <Label x:Name="dogBDayLabel" Content="Birthday:" HorizontalAlignment="Left" Margin="155.2,137,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="1"/>
-        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <TextBox x:Name="availableTextBox" HorizontalAlignment="Left" Height="37" Margin="367.2,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <TextBox x:Name="shotsTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <TextBox x:Name="weightTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <TextBox x:Name="breedTextBox" HorizontalAlignment="Left" Height="55" Margin="304.2,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <TextBox x:Name="bdayTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="1"/>
-        <Button x:Name="chooseDogButton" Content="Choose Dog" HorizontalAlignment="Left" Margin="529.2,369,0,0" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="1"/>
-        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="651.2,369,0,0" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="1" Click="ExitButton_Click"/>
-        <Image x:Name="dogImageDisplay" HorizontalAlignment="Left" Height="192" Margin="506.2,106,0,0" VerticalAlignment="Top" Width="201" Stretch="Fill" Grid.Column="1"/>
+        <Label x:Name="dogNameLabel" Content="Name:" HorizontalAlignment="Left" Margin="155.2,85,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <Label x:Name="godBreedLabel" Content="Breed:" HorizontalAlignment="Left" Margin="155.2,189,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <Label x:Name="dogAvailableLabel" Content="Months Available:" HorizontalAlignment="Left" Margin="155.2,363,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <Label x:Name="dogShotsLabel" Content="Shots?:" HorizontalAlignment="Left" Margin="155.2,306,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <Label x:Name="dogWeightLabel" Content="Weight:" HorizontalAlignment="Left" Margin="155.2,249,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <Label x:Name="dogBDayLabel" Content="Birthday:" HorizontalAlignment="Left" Margin="155.2,137,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FF261212" Foreground="#FFE8D9D9" Grid.Column="2"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="availableTextBox" HorizontalAlignment="Left" Height="37" Margin="367.2,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="shotsTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="weightTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="breedTextBox" HorizontalAlignment="Left" Height="55" Margin="304.2,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="bdayTextBox" HorizontalAlignment="Left" Height="37" Margin="304.2,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="20" TextAlignment="Center" TextChanged="TextBox_TextChanged" IsReadOnly="True" Grid.Column="2"/>
+        <Button x:Name="chooseDogButton" Content="Choose Dog" HorizontalAlignment="Left" Margin="527.2,366,0,0" VerticalAlignment="Top" Width="121" Height="30" Grid.Column="2" Click="ChooseDogButton_Click" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="664.2,366,0,0" VerticalAlignment="Top" Width="95" Height="30" Grid.Column="2" Click="ExitButton_Click" FontSize="20" FontWeight="Bold"/>
+        <Image x:Name="dogImageDisplay" HorizontalAlignment="Left" Height="192" Margin="506.2,106,0,0" VerticalAlignment="Top" Width="201" Stretch="Fill" Grid.Column="2"/>
 
     </Grid>
 </Window>

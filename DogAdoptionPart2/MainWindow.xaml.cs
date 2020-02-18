@@ -150,5 +150,12 @@ namespace DogAdoptionPart2
         {
             Application.Current.Shutdown();
         }
+
+        private void ChooseDogButton_Click(object sender, RoutedEventArgs e)
+        {
+            DogConfirmation dogConfirmation = new DogConfirmation();
+            this.Close();
+            dogConfirmation.Show();
+        }
     }
 }
