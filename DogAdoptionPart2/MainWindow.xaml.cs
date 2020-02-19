@@ -25,7 +25,7 @@ namespace DogAdoptionPart2
 
 
         //IEnumerable<string> lines = File.ReadLines("C:/Users/dblon/source/repos/DogAdoptionPart2/DogInformation.txt").ToArray();
-        string[] dogInfo = File.ReadLines("C:/Users/drb5631/Source/Repos/DogAdoptionPart2/DogInformation.txt").ToArray();
+        string[] dogInfo = File.ReadLines("C:/Users/dblon/source/repos/DogAdoptionPart2/DogInformation.txt").ToArray();
 
 
         public MainWindow()

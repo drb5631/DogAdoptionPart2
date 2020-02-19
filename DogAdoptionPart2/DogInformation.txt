@@ -18,3 +18,43 @@ Bernadette
 03/02/19
 02/21/20
 01/02/19
+German Shepherd
+Golden Retriever
+Blue Nose Pitbull
+American Bulldog
+Siberian Husky
+Rottweiler
+Black Lab
+Beagle
+American Terrier
+Puggle
+20kg-40kg
+25kg-34kg
+30lbs-60lbs
+27kg-58kg
+16kg-27kg
+35kg-60kg
+25kg-36kg
+9kg-11kg
+28kg-40kg
+15lbs-30lbs
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+1
+2
+3
+1
+2
+3
+1
+2
+3
+1
